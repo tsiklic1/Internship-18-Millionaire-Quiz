@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "queston": "What is the capital of India?",
+    "question": "What is the capital of India?",
     "options": [
       {
         "id": 1,
@@ -28,7 +28,7 @@
   },
   {
     "id": 2,
-    "queston": "What is the capital of USA?",
+    "question": "What is the capital of USA?",
     "options": [
       {
         "id": 1,
@@ -54,7 +54,7 @@
   },
   {
     "id": 3,
-    "queston": "What is the capital of Australia?",
+    "question": "What is the capital of Australia?",
     "options": [
       {
         "id": 1,
@@ -80,7 +80,7 @@
   },
   {
     "id": 4,
-    "queston": "What is the capital of Canada?",
+    "question": "What is the capital of Canada?",
     "options": [
       {
         "id": 1,
@@ -106,7 +106,7 @@
   },
   {
     "id": 5,
-    "queston": "What is the capital of France?",
+    "question": "What is the capital of France?",
     "options": [
       {
         "id": 1,
@@ -132,7 +132,7 @@
   },
   {
     "id": 6,
-    "queston": "What is the capital of Germany?",
+    "question": "What is the capital of Germany?",
     "options": [
       {
         "id": 1,
@@ -158,7 +158,7 @@
   },
   {
     "id": 7,
-    "queston": "What is the capital of Italy?",
+    "question": "What is the capital of Italy?",
     "options": [
       {
         "id": 1,
@@ -184,7 +184,7 @@
   },
   {
     "id": 8,
-    "queston": "What is the capital of Japan?",
+    "question": "What is the capital of Japan?",
     "options": [
       {
         "id": 1,
@@ -210,7 +210,7 @@
   },
   {
     "id": 9,
-    "queston": "What is the capital of Russia?",
+    "question": "What is the capital of Russia?",
     "options":[
       {
         "id": 1,
@@ -236,7 +236,7 @@
   },
   {
     "id": 10,
-    "queston": "What is the capital of Spain?",
+    "question": "What is the capital of Spain?",
     "options": [
       {
         "id": 1,
@@ -262,7 +262,7 @@
   },
   {
     "id": 11,
-    "queston": "What is the capital of Sweden?",
+    "question": "What is the capital of Sweden?",
     "options": [
       {
         "id": 1,
@@ -288,7 +288,7 @@
   },
   {
     "id": 12,
-    "queston": "What is the capital of Switzerland?",
+    "question": "What is the capital of Switzerland?",
     "options": [
       {
         "id": 1,
@@ -314,7 +314,7 @@
   },
   {
     "id": 13,
-    "queston": "What is the capital of Turkey?",
+    "question": "What is the capital of Turkey?",
     "options": [
       {
         "id": 1,
@@ -340,7 +340,7 @@
   },
   {
     "id": 14,
-    "queston": "What is the capital of United Kingdom?",
+    "question": "What is the capital of United Kingdom?",
     "options": [
       {
         "id": 1,
@@ -366,7 +366,7 @@
   },
   {
     "id": 15,
-    "queston": "What is the capital of Norway?",
+    "question": "What is the capital of Norway?",
     "options": [
       {
         "id": 1,

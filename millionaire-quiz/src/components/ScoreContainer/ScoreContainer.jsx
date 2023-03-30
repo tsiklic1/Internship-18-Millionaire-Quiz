@@ -1,5 +1,10 @@
+import { useScore } from "../../providers/ScoreProvider";
+
 const ScoreContainer = () => {
-  return <div>Score container</div>;
+  const { currentScore } = useScore();
+  console.log("current score", currentScore);
+
+  return <div>ačsdlkjfčakj</div>;
 };
 
 export default ScoreContainer;

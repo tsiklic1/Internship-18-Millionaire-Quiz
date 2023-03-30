@@ -1,5 +1,13 @@
+import { useQuestions } from "../../providers/QuestionsProvider";
+
 const QuestionContainer = () => {
-  return <div className="question-container">Question</div>;
+  const { currentQuestion } = useQuestions();
+
+  return (
+    <div className="question-container">
+      <p>{currentQuestion.question}</p>
+    </div>
+  );
 };
 
 export default QuestionContainer;

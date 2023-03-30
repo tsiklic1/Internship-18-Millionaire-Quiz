@@ -1,25 +1,28 @@
-//unutar ovog zelin da se sprema state o trenutnom pitanju
 import { createContext, useState, useContext } from "react";
 import questions from "../questions.json";
+import { shuffleArray } from "../utils";
+
+const shuffledArray = shuffleArray(questions);
 
 const defaultContext = {
-  currentQuestionIndex: 0,
+  currentQuestion: shuffledArray[0],
   setCurrentQuestionIndex: () => {},
 };
 
 export const QuestionContext = createContext(defaultContext);
 
 const QuestionsProvider = ({ children }) => {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(
-    defaultContext.currentQuestionIndex
+  const [currentQuestion, setCurrentQuestionIndex] = useState(
+    defaultContext.currentQuestion
   );
 
-  const toggleQuestion = () => {
+  const changeQuestion = () => {
+    //ova logika ne funkcionira samo je tu cisto da stoji
     setCurrentQuestionIndex((prev) => prev + 1);
   };
 
   return (
-    <QuestionContext.Provider value={{ currentQuestionIndex, toggleQuestion }}>
+    <QuestionContext.Provider value={{ currentQuestion, changeQuestion }}>
       {children}
     </QuestionContext.Provider>
   );
