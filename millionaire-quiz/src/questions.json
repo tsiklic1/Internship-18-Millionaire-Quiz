@@ -1,0 +1,394 @@
+[
+  {
+    "id": 1,
+    "queston": "What is the capital of India?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Delhi",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Mumbai",
+        "isCorrect": false
+
+      },
+      {
+        "id": 3,
+        "option": "Kolkata",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Chennai",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "queston": "What is the capital of USA?",
+    "options": [
+      {
+        "id": 1,
+        "option": "New York",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "option": "Washington DC",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "option": "Los Angeles",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Chicago",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "queston": "What is the capital of Australia?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Sydney",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "option": "Melbourne",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Canberra",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "option": "Perth",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "queston": "What is the capital of Canada?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Toronto",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "option": "Ottawa",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "option": "Montreal",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Vancouver",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "queston": "What is the capital of France?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Paris",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Marseille",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Lyon",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Toulouse",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "queston": "What is the capital of Germany?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Berlin",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Hamburg",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Munich",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Cologne",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "queston": "What is the capital of Italy?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Rome",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Milan",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Naples",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Turin",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "queston": "What is the capital of Japan?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Tokyo",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Osaka",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Kyoto",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Yokohama",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "queston": "What is the capital of Russia?",
+    "options":[
+      {
+        "id": 1,
+        "option": "Moscow",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Saint Petersburg",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Novosibirsk",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Yekaterinburg",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "queston": "What is the capital of Spain?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Madrid",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Barcelona",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Valencia",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Seville",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "queston": "What is the capital of Sweden?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Stockholm",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Gothenburg",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Malmö",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Uppsala",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "queston": "What is the capital of Switzerland?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Bern",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Zurich",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Geneva",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Basel",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "queston": "What is the capital of Turkey?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Ankara",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Istanbul",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Izmir",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Bursa",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "queston": "What is the capital of United Kingdom?",
+    "options": [
+      {
+        "id": 1,
+        "option": "London",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Birmingham",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Glasgow",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Liverpool",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "queston": "What is the capital of Norway?",
+    "options": [
+      {
+        "id": 1,
+        "option": "Oslo",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "option": "Bergen",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "option": "Trondheim",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "option": "Stavanger",
+        "isCorrect": false
+      }
+    ]
+  }
+
+]
