@@ -10,13 +10,16 @@ const defaultContext = {
 export const ScoreContext = createContext(defaultContext);
 
 const ScoreProvider = ({ children }) => {
-  console.log(children);
   const [currentScore, setCurrentScore] = useState(defaultContext.currentScore);
 
-  const changeScore = () => {
+  const changeScore = (isCorrect) => {
     setCurrentScore((prev) => {
-      const index = scores.findIndex((score) => score === prev);
-      return scores[index + 1];
+      if (isCorrect) {
+        const index = scores.findIndex((score) => score === prev);
+        return scores[index + 1];
+      } else {
+        return scores[0];
+      }
     });
   };
   return (

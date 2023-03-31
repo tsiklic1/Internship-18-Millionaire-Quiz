@@ -5,19 +5,29 @@ import QuestionContainer from "./components/QuestionContainer";
 import AnswersContainer from "./components/AnswersContainer";
 import ScoreProvider from "./providers/ScoreProvider";
 import ScoreContainer from "./components/ScoreContainer/ScoreContainer";
+import DialogProvider from "./providers/DialogProvider";
+import DialogSwitch from "./components/Dialogs";
 
-const shuffledArray = shuffleArray(questions);
-console.log(shuffledArray);
+// const shuffledArray = shuffleArray(questions);
+
+// for (let el of shuffledArray) {
+//   el = shuffleArray(el.options);
+// }
+
+// console.log(shuffledArray);
 
 function App() {
   return (
     <div className="App">
       <QuestionsProvider>
         <ScoreProvider>
-          <h1>Millionaire Quiz</h1>
-          <QuestionContainer />
-          <AnswersContainer />
-          <ScoreContainer />
+          <DialogProvider>
+            <h1>Millionaire Quiz</h1>
+            <QuestionContainer />
+            <AnswersContainer />
+            <ScoreContainer />
+            <DialogSwitch />
+          </DialogProvider>
         </ScoreProvider>
       </QuestionsProvider>
     </div>

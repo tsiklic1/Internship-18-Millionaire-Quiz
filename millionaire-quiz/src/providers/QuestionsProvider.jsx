@@ -4,21 +4,27 @@ import { shuffleArray } from "../utils";
 
 const shuffledArray = shuffleArray(questions);
 
+for (let el of shuffledArray) {
+  el = shuffleArray(el.options);
+}
+
 const defaultContext = {
   currentQuestion: shuffledArray[0],
-  setCurrentQuestionIndex: () => {},
+  setCurrentQuestion: () => {},
 };
 
 export const QuestionContext = createContext(defaultContext);
 
 const QuestionsProvider = ({ children }) => {
-  const [currentQuestion, setCurrentQuestionIndex] = useState(
+  const [currentQuestion, setCurrentQuestion] = useState(
     defaultContext.currentQuestion
   );
 
   const changeQuestion = () => {
     //ova logika ne funkcionira samo je tu cisto da stoji
-    setCurrentQuestionIndex((prev) => prev + 1);
+    setCurrentQuestion(
+      (prev) => shuffledArray[shuffledArray.indexOf(prev) + 1]
+    );
   };
 
   return (

@@ -1,0 +1,13 @@
+.answersContainer {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.answerButton {
+  width: 400px;
+  height: 70px;
+  background-color: #000088;
+  border: solid 3px #337700;
+  color: #ffffff;
+}
