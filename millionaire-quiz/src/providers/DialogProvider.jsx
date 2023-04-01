@@ -2,6 +2,7 @@ import { createContext } from "react";
 import { useState, useContext } from "react";
 export const DIALOG = {
   CONFIRM_ANSWER_DIALOG: "CONFIRM_ANSWER_DIALOG",
+  PHONE_A_FRIEND_DIALOG: "PHONE_A_FRIEND_DIALOG",
 };
 
 const defaultContext = {

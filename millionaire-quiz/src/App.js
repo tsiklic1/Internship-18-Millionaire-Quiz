@@ -32,10 +32,7 @@ function App() {
                 />
               </div>
               <div>
-                <Jokers
-                  clicked5050={clicked5050}
-                  setClicked5050={setClicked5050}
-                />
+                <Jokers setClicked5050={setClicked5050} />
                 <ScoreContainer />
               </div>
               <DialogSwitch />
