@@ -7,6 +7,7 @@ import ScoreProvider from "./providers/ScoreProvider";
 import ScoreContainer from "./components/ScoreContainer/ScoreContainer";
 import DialogProvider from "./providers/DialogProvider";
 import DialogSwitch from "./components/Dialogs";
+import Jokers from "./components/Jokers";
 
 // const shuffledArray = shuffleArray(questions);
 
@@ -26,6 +27,7 @@ function App() {
             <QuestionContainer />
             <AnswersContainer />
             <ScoreContainer />
+            <Jokers />
             <DialogSwitch />
           </DialogProvider>
         </ScoreProvider>

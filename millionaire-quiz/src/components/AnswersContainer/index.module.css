@@ -11,3 +11,15 @@
   border: solid 3px #337700;
   color: #ffffff;
 }
+
+.answerButton:hover {
+  background-color: #cccc00;
+}
+
+.correct {
+  background-color: #00ff00;
+}
+
+.wrong {
+  background-color: #ff0000;
+}
