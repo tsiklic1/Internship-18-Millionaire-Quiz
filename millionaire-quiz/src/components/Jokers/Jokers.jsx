@@ -8,6 +8,7 @@ const Jokers = ({ setClicked5050 }) => {
 
   const [used5050, setUsed5050] = useState(false);
   const [usedPhoneAFriend, setUsedPhoneAFriend] = useState(false);
+  const [usedAudience, setUsedAudience] = useState(false);
 
   const handle5050 = () => {
     setClicked5050(true);
@@ -34,6 +35,23 @@ const Jokers = ({ setClicked5050 }) => {
     setUsedPhoneAFriend(true);
   };
 
+  const handleAudience = () => {
+    let audienceAnswer;
+    if (Math.random() < 0.8) {
+      audienceAnswer = currentQuestion.options.find(
+        (option) => option.isCorrect
+      ).option;
+    } else {
+      const wrongAnswers = currentQuestion.options.filter(
+        (option) => !option.isCorrect
+      );
+      audienceAnswer =
+        wrongAnswers[Math.floor(Math.random() * wrongAnswers.length)].option;
+    }
+    open(DIALOG.AUDIENCE_DIALOG, { sendAudienceAnswer: audienceAnswer });
+    setUsedAudience(true);
+  };
+
   return (
     <div>
       <button disabled={used5050} onClick={() => handle5050()}>
@@ -42,7 +60,9 @@ const Jokers = ({ setClicked5050 }) => {
       <button disabled={usedPhoneAFriend} onClick={() => handlePhoneAFriend()}>
         Phone a friend
       </button>
-      <button>Audience</button>
+      <button disabled={usedAudience} onClick={() => handleAudience()}>
+        Audience
+      </button>
     </div>
   );
 };
