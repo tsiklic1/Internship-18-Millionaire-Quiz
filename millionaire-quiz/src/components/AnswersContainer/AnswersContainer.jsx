@@ -7,11 +7,12 @@ import { useState } from "react";
 import classes from "./index.module.css";
 
 const AnswersContainer = () => {
-  const { open } = useDialog();
+  const { activeDialog, open } = useDialog();
 
   const { currentQuestion, changeQuestion } = useQuestions();
   const { currentScore, changeScore } = useScore();
   const answers = currentQuestion.options;
+
   const [tempStyles, setTempStyles] = useState(false);
   const [clickedId, setClickedId] = useState(null);
 
@@ -51,6 +52,9 @@ const AnswersContainer = () => {
               [classes.correct]: option.isCorrect && tempStyles,
               [classes.wrong]:
                 !option.isCorrect && tempStyles && clickedId === option.id,
+              [classes.hover]:
+                activeDialog === DIALOG.CONFIRM_ANSWER_DIALOG &&
+                clickedId === option.id,
             })
           }
           onClick={(e) => handleClick(e, option)}

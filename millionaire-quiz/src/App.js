@@ -9,13 +9,7 @@ import DialogProvider from "./providers/DialogProvider";
 import DialogSwitch from "./components/Dialogs";
 import Jokers from "./components/Jokers";
 
-// const shuffledArray = shuffleArray(questions);
-
-// for (let el of shuffledArray) {
-//   el = shuffleArray(el.options);
-// }
-
-// console.log(shuffledArray);
+import "./main.css";
 
 function App() {
   return (
@@ -24,11 +18,17 @@ function App() {
         <ScoreProvider>
           <DialogProvider>
             <h1>Millionaire Quiz</h1>
-            <QuestionContainer />
-            <AnswersContainer />
-            <ScoreContainer />
-            <Jokers />
-            <DialogSwitch />
+            <div className="wrapper">
+              <div className="question-wrapper">
+                <QuestionContainer />
+                <AnswersContainer />
+              </div>
+              <div>
+                <Jokers />
+                <ScoreContainer />
+              </div>
+              <DialogSwitch />
+            </div>
           </DialogProvider>
         </ScoreProvider>
       </QuestionsProvider>
