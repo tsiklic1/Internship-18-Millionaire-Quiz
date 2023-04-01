@@ -9,9 +9,14 @@ import DialogProvider from "./providers/DialogProvider";
 import DialogSwitch from "./components/Dialogs";
 import Jokers from "./components/Jokers";
 
+import { useState } from "react";
 import "./main.css";
 
 function App() {
+  const [clicked5050, setClicked5050] = useState(false);
+  const [clickedAudience, setClickedAudience] = useState(false);
+  const [clickedPhone, setClickedPhone] = useState(false);
+
   return (
     <div className="App">
       <QuestionsProvider>
@@ -21,10 +26,16 @@ function App() {
             <div className="wrapper">
               <div className="question-wrapper">
                 <QuestionContainer />
-                <AnswersContainer />
+                <AnswersContainer
+                  clicked5050={clicked5050}
+                  setClicked5050={setClicked5050}
+                />
               </div>
               <div>
-                <Jokers />
+                <Jokers
+                  clicked5050={clicked5050}
+                  setClicked5050={setClicked5050}
+                />
                 <ScoreContainer />
               </div>
               <DialogSwitch />

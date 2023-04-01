@@ -27,3 +27,7 @@
 .hover {
   background-color: #cccc00;
 }
+
+.transparent {
+  color: transparent;
+}

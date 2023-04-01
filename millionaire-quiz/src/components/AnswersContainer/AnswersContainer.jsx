@@ -3,10 +3,10 @@ import { letters } from "../../utils";
 import { useDialog, DIALOG } from "../../providers/DialogProvider";
 import { useScore } from "../../providers/ScoreProvider";
 import clsx from "clsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./index.module.css";
 
-const AnswersContainer = () => {
+const AnswersContainer = ({ clicked5050, setClicked5050 }) => {
   const { activeDialog, open } = useDialog();
 
   const { currentQuestion, changeQuestion } = useQuestions();
@@ -16,19 +16,20 @@ const AnswersContainer = () => {
   const [tempStyles, setTempStyles] = useState(false);
   const [clickedId, setClickedId] = useState(null);
 
+  const [transparentAnswers, setTransparentAnswers] = useState([]);
+
   const handleClick = (e, option) => {
     setClickedId(option.id);
     console.log("handleclick", option);
     open(DIALOG.CONFIRM_ANSWER_DIALOG, {
       onSubmit: () => {
         setTempStyles(true);
-        console.log("submit", option);
         if (option.isCorrect) {
-          console.log("correct");
           setTimeout(() => {
-            console.log("čeka se");
             changeQuestion();
             setTempStyles(false);
+            setClicked5050(false);
+            setTransparentAnswers([]);
           }, 3000);
         } else {
           setTimeout(() => {
@@ -39,6 +40,15 @@ const AnswersContainer = () => {
       },
     });
   };
+
+  useEffect(() => {
+    if (clicked5050) {
+      const wrongAnswers = answers.filter((answer) => !answer.isCorrect);
+      setTransparentAnswers((prev) => {
+        return [...prev, wrongAnswers[0].id, wrongAnswers[1].id];
+      });
+    }
+  }, [clicked5050]);
 
   return (
     <div className={classes.answersContainer}>
@@ -55,6 +65,7 @@ const AnswersContainer = () => {
               [classes.hover]:
                 activeDialog === DIALOG.CONFIRM_ANSWER_DIALOG &&
                 clickedId === option.id,
+              [classes.transparent]: transparentAnswers.includes(option.id),
             })
           }
           onClick={(e) => handleClick(e, option)}
