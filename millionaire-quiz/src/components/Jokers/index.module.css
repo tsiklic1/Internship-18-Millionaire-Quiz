@@ -1,0 +1,11 @@
+.jokerButton {
+  background-color: #000055;
+  border: 1px solid #0000bb;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 3px;
+}
+
+.disabled {
+  color: transparent;
+}

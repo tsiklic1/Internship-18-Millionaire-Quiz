@@ -1,3 +1,20 @@
+.currentScore {
+  border: solid 2px #0000bb;
+  padding: 10px;
+}
+
+.scoreBoardText {
+  font-size: 19px;
+  font-weight: 300;
+  margin: 2px;
+  padding: 0;
+  text-align: center;
+}
+
 .highlighted {
-  background-color: yellow;
+  background-color: #ff9100;
+}
+
+.scoreIndex {
+  margin-right: 8px;
 }

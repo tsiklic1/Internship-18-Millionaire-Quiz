@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useDialog, DIALOG } from "../../providers/DialogProvider";
 import { useQuestions } from "../../providers/QuestionsProvider";
+import clsx from "clsx";
 
-const Jokers = ({ setClicked5050 }) => {
+import classes from "./index.module.css";
+
+const Jokers = ({ setClicked5050, tempStyles }) => {
   const { activeDialog, open } = useDialog();
   const { currentQuestion } = useQuestions();
 
@@ -54,13 +57,33 @@ const Jokers = ({ setClicked5050 }) => {
 
   return (
     <div>
-      <button disabled={used5050} onClick={() => handle5050()}>
+      <button
+        className={
+          classes.jokerButton + " " + clsx({ [classes.disabled]: used5050 })
+        }
+        disabled={used5050 || tempStyles}
+        onClick={() => handle5050()}
+      >
         50:50
       </button>
-      <button disabled={usedPhoneAFriend} onClick={() => handlePhoneAFriend()}>
+      <button
+        className={
+          classes.jokerButton +
+          " " +
+          clsx({ [classes.disabled]: usedPhoneAFriend })
+        }
+        disabled={usedPhoneAFriend || tempStyles}
+        onClick={() => handlePhoneAFriend()}
+      >
         Phone a friend
       </button>
-      <button disabled={usedAudience} onClick={() => handleAudience()}>
+      <button
+        className={
+          classes.jokerButton + " " + clsx({ [classes.disabled]: usedAudience })
+        }
+        disabled={usedAudience || tempStyles}
+        onClick={() => handleAudience()}
+      >
         Audience
       </button>
     </div>

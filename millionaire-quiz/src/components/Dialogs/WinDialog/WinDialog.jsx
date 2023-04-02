@@ -7,7 +7,15 @@ const WinDialog = ({ isOpen, onClose }) => {
   };
 
   return (
-    <Dialog open={isOpen} onClose={onClose}>
+    <Dialog
+      PaperProps={{
+        style: {
+          backgroundColor: "#0000bb",
+        },
+      }}
+      open={isOpen}
+      onClose={onClose}
+    >
       <DialogTitle>Congratulations, you won $1000000!</DialogTitle>
       <DialogActions>
         <Button onClick={() => handleRestart()}>Restart</Button>

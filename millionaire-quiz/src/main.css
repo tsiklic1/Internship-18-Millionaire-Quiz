@@ -1,11 +1,26 @@
 * {
   box-sizing: border-box;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   margin: 0;
+  background-color: #000088;
+  padding: 30px;
 }
 
 .wrapper {
   display: flex;
 }
+
+.question-wrapper {
+  margin-right: 30px;
+}
+
+/* .dialog {
+  background-color: #0000ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+} */

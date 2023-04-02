@@ -24,7 +24,15 @@ const ConfirmAnswerDialog = ({ isOpen, onClose, onSubmit }) => {
   };
 
   return (
-    <Dialog open={isOpen} onClose={onClose}>
+    <Dialog
+      PaperProps={{
+        style: {
+          backgroundColor: "#0000bb",
+        },
+      }}
+      open={isOpen}
+      onClose={onClose}
+    >
       <DialogTitle>Is that your final answer?</DialogTitle>
       <DialogActions>
         <Button onClick={handleSubmit}>Yes</Button>

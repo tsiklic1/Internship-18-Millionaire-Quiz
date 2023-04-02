@@ -17,17 +17,19 @@ const ScoreContainer = () => {
 
   return (
     <div>
-      <p>{currentScore}</p>
+      <p className={classes.currentScore}>{currentScore}</p>
 
       {reversedArray.map((score) => (
         <p
           className={clsx({
             [classes.highlighted]:
               score === scores[scores.indexOf(currentScore) + 1],
+            [classes.scoreBoardText]: true,
           })}
           key={score}
         >
-          {scores.indexOf(score)} {score}
+          <span className={classes.scoreIndex}>{scores.indexOf(score)} </span>{" "}
+          {score}
         </p>
       ))}
     </div>

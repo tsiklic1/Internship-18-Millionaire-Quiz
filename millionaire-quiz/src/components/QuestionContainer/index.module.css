@@ -3,6 +3,7 @@
   height: 400px;
   background-color: #000088;
   border-radius: 10px;
-  border: solid 2px #337700;
-  color: #ffffff;
+  border: solid 2px #0000bb;
+  padding: 30px;
+  margin-bottom: 10px;
 }

@@ -5,11 +5,13 @@
 }
 
 .answerButton {
-  width: 400px;
-  height: 70px;
+  width: 50%;
+  height: 60px;
   background-color: #000088;
-  border: solid 3px #337700;
-  color: #ffffff;
+  border: solid 3px #0000bb;
+  border-radius: 30px;
+  margin-bottom: 4px;
+  font-size: 15px;
 }
 
 .answerButton:hover {

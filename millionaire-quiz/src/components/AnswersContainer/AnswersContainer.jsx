@@ -6,14 +6,19 @@ import clsx from "clsx";
 import { useEffect, useState } from "react";
 import classes from "./index.module.css";
 
-const AnswersContainer = ({ clicked5050, setClicked5050 }) => {
+const AnswersContainer = ({
+  clicked5050,
+  setClicked5050,
+  tempStyles,
+  setTempStyles,
+}) => {
   const { activeDialog, open } = useDialog();
 
   const { currentQuestion, changeQuestion } = useQuestions();
   const { currentScore, changeScore } = useScore();
   const answers = currentQuestion.options;
 
-  const [tempStyles, setTempStyles] = useState(false);
+  // const [tempStyles, setTempStyles] = useState(false);
   const [clickedId, setClickedId] = useState(null);
 
   const [transparentAnswers, setTransparentAnswers] = useState([]);
@@ -29,14 +34,15 @@ const AnswersContainer = ({ clicked5050, setClicked5050 }) => {
             setTempStyles(false);
             setClicked5050(false);
             setTransparentAnswers([]);
+            changeScore(option.isCorrect);
           }, 3000);
         } else {
           setTimeout(() => {
             setTempStyles(false);
             window.location.reload();
+            changeScore(option.isCorrect);
           }, 3000);
         }
-        changeScore(option.isCorrect);
       },
     });
   };
