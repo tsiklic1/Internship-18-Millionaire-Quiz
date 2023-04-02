@@ -29,10 +29,11 @@ const AnswersContainer = ({ clicked5050, setClicked5050 }) => {
             setTempStyles(false);
             setClicked5050(false);
             setTransparentAnswers([]);
-          }, 5);
+          }, 3000);
         } else {
           setTimeout(() => {
             setTempStyles(false);
+            window.location.reload();
           }, 3000);
         }
         changeScore(option.isCorrect);
