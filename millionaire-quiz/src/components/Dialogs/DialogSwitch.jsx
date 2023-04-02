@@ -2,6 +2,7 @@ import { useDialog, DIALOG } from "../../providers/DialogProvider";
 import AudienceDialog from "./AudienceDialog/AudienceDialog";
 import ConfirmAnswerDialog from "./ConfirmAnswerDialog";
 import PhoneAFriendDialog from "./PhoneAFriendDialog/PhoneAFriendDialog";
+import WinDialog from "./WinDialog";
 const DialogSwitch = () => {
   const { activeDialog, additionalProps, close } = useDialog();
 
@@ -19,6 +20,11 @@ const DialogSwitch = () => {
       />
       <AudienceDialog
         isOpen={activeDialog === DIALOG.AUDIENCE_DIALOG}
+        {...additionalProps}
+        onClose={close}
+      />
+      <WinDialog
+        isOpen={activeDialog === DIALOG.WIN_DIALOG}
         {...additionalProps}
         onClose={close}
       />

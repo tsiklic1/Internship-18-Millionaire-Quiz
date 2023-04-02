@@ -20,7 +20,6 @@ const AnswersContainer = ({ clicked5050, setClicked5050 }) => {
 
   const handleClick = (e, option) => {
     setClickedId(option.id);
-    console.log("handleclick", option);
     open(DIALOG.CONFIRM_ANSWER_DIALOG, {
       onSubmit: () => {
         setTempStyles(true);
@@ -30,7 +29,7 @@ const AnswersContainer = ({ clicked5050, setClicked5050 }) => {
             setTempStyles(false);
             setClicked5050(false);
             setTransparentAnswers([]);
-          }, 3000);
+          }, 5);
         } else {
           setTimeout(() => {
             setTempStyles(false);

@@ -10,6 +10,7 @@ export const shuffleArray = (array) => {
 export const letters = ["A: ", "B: ", "C: ", "D: "];
 
 export const scores = [
+  "$0",
   "$100",
   "$200",
   "$300",

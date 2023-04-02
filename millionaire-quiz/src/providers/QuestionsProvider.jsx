@@ -5,8 +5,10 @@ import { shuffleArray } from "../utils";
 const shuffledArray = shuffleArray(questions);
 
 for (let el of shuffledArray) {
-  el = shuffleArray(el.options);
+  shuffleArray(el.options);
 }
+
+console.log(shuffledArray);
 
 const defaultContext = {
   currentQuestion: shuffledArray[0],
@@ -21,7 +23,6 @@ const QuestionsProvider = ({ children }) => {
   );
 
   const changeQuestion = () => {
-    //ova logika ne funkcionira samo je tu cisto da stoji
     setCurrentQuestion(
       (prev) => shuffledArray[shuffledArray.indexOf(prev) + 1]
     );
