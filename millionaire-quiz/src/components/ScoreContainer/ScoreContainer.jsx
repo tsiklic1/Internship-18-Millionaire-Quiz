@@ -8,11 +8,9 @@ const ScoreContainer = () => {
   const { currentScore } = useScore();
 
   const clonedArray = JSON.parse(JSON.stringify(scores));
-  console.log(clonedArray);
 
   const reversedArray = clonedArray.reverse();
 
-  console.log(reversedArray);
   reversedArray.pop();
 
   return (

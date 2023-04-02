@@ -6,7 +6,7 @@ import clsx from "clsx";
 import classes from "./index.module.css";
 
 const Jokers = ({ setClicked5050, tempStyles }) => {
-  const { activeDialog, open } = useDialog();
+  const { open } = useDialog();
   const { currentQuestion } = useQuestions();
 
   const [used5050, setUsed5050] = useState(false);
@@ -31,7 +31,6 @@ const Jokers = ({ setClicked5050, tempStyles }) => {
       friendAnswer =
         wrongAnswers[Math.floor(Math.random() * wrongAnswers.length)].option;
     }
-    console.log("friendAnswer", friendAnswer);
     open(DIALOG.PHONE_A_FRIEND_DIALOG, {
       sendFriendAnswer: friendAnswer,
     });

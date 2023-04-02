@@ -8,8 +8,6 @@ for (let el of shuffledArray) {
   shuffleArray(el.options);
 }
 
-console.log(shuffledArray);
-
 const defaultContext = {
   currentQuestion: shuffledArray[0],
   setCurrentQuestion: () => {},

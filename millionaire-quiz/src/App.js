@@ -1,6 +1,4 @@
 import QuestionsProvider from "./providers/QuestionsProvider";
-import questions from "./questions.json";
-import { shuffleArray } from "./utils";
 import QuestionContainer from "./components/QuestionContainer";
 import AnswersContainer from "./components/AnswersContainer";
 import ScoreProvider from "./providers/ScoreProvider";
@@ -15,8 +13,6 @@ import "./main.css";
 
 function App() {
   const [clicked5050, setClicked5050] = useState(false);
-  const [clickedAudience, setClickedAudience] = useState(false);
-  const [clickedPhone, setClickedPhone] = useState(false);
   const [tempStyles, setTempStyles] = useState(false);
 
   return (

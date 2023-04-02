@@ -15,10 +15,9 @@ const AnswersContainer = ({
   const { activeDialog, open } = useDialog();
 
   const { currentQuestion, changeQuestion } = useQuestions();
-  const { currentScore, changeScore } = useScore();
+  const { changeScore } = useScore();
   const answers = currentQuestion.options;
 
-  // const [tempStyles, setTempStyles] = useState(false);
   const [clickedId, setClickedId] = useState(null);
 
   const [transparentAnswers, setTransparentAnswers] = useState([]);
@@ -54,7 +53,7 @@ const AnswersContainer = ({
         return [...prev, wrongAnswers[0].id, wrongAnswers[1].id];
       });
     }
-  }, [clicked5050]);
+  }, [clicked5050, answers]);
 
   return (
     <div className={classes.answersContainer}>
