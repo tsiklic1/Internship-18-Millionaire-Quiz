@@ -59,7 +59,7 @@ const AnswersContainer = ({
     <div className={classes.answersContainer}>
       {answers.map((option, i) => (
         <button
-          disabled={tempStyles || clicked5050}
+          disabled={tempStyles}
           className={
             classes.answerButton +
             " " +
